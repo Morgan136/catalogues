@@ -1,5 +1,5 @@
-Const OutputPath = "output.txt"
-Const BeginFolder  = "C:\testFolder"
+Const OutputPath = "dist\output.txt"
+Const BeginFolder  = "C:\testFolder" '<<<---ПУТЬ К ФАЙЛУ'
  
 Dim FSO, TheFolder, F
 Set FSO = CreateObject("Scripting.FileSystemObject")
@@ -12,7 +12,7 @@ F.Close()
 set F = Fso.OpenTextFile(OutputPath, 8, true)
 WorkWithSubFolders TheFolder
 F.Close()
-Msgbox "End!"
+'Msgbox "End!"
  
  
 Sub WorkWithSubFolders(ByVal AFolder)
