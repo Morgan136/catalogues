@@ -1,0 +1,4 @@
+1. Указать путь к папке в файле catalogue.vbs
+2. Запустить catalogue.vbs
+3. Запустить costyl.py
+4. Список находится в файле output2.txt

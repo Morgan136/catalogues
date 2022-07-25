@@ -1,4 +1,4 @@
-Const OutputPath = "C:\output.txt"
+Const OutputPath = "output.txt"
 Const BeginFolder  = "C:\testFolder"
  
 Dim FSO, TheFolder, F
