@@ -1,16 +1,16 @@
 from pathlib import Path
 
-a = []
 q = ""
 
 with open("output.txt", "r") as r:
 	q += r.readline()
-	print("\nroot file: " + q)
+
 words = [w for w in Path(r"output.txt").read_text().replace("\n", " ").split("C:\\")]
 
-w = words [1]
+z = open("output2.txt", "w")
+z.write(q)
 
 for i in words:
-	z = i.replace(w, "")
-	a.append(z)
-	print(i.replace(w[:-1], ""))
+	z.write(i.replace(words[1][:-1], "\n"))
+	
+z.close()
